@@ -132,5 +132,12 @@ public class FlightBookingTest
         else {
             assertEquals(1, 2);
         }
-    }   
+    }
+    
+    @Test
+    public void testing_Setting_Up_Trip_Source_Using_Enum2() {
+        FlightBooking.TripSource tripSource = FlightBooking.TripSource.NANJING;
+        assertEquals(FlightBooking.TripSource.valueOf("NANJING"), tripSource);
+    }
+    
 }
